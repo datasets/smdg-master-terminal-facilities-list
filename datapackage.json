@@ -1,0 +1,100 @@
+{
+  "name": "smdg-master-terminal-facilities-list",
+  "title": "SMDG Master Terminal Facilities List",
+  "description": "Code list for terminal facilities built as an extension to UN/LOCODE",
+  "homepage": "http://smdg.org/index.php/smdg-code-lists/",
+  "version": "201602.1",
+  "license": "CC-BY-4.0",
+  "sources": [{
+  "name": "SMDG",
+  "web": "http://smdg.org/"
+  }],
+  "resources": [
+    {
+      "path": "data/smdg-master-terminal-facilities-list.csv",
+      "format": "CSV",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "UNLOCODE",
+            "description": "Main location UN/LOCODE. In an UN/EDIFACT message, use in a LOC segment, element C517.3225",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "CompanyName",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "TerminalFacility",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "TerminalCode",
+            "description": "In an UN/EDIFACT message, use in a LOC segment, element C519.3223",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "LastChange",
+            "description": "Last change of this entry",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "ValidFrom",
+            "description": "Entry is valid from this date",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "ValidBefore",
+            "description": "Entry is valid till this date",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "DateInsert",
+            "description": "Entry was added on this date",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "ApplicantName",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ApplicantEmail",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Latitude",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Longitude",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "TerminalContactOrWebsite",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "container",
+    "container terminal",
+    "un-locode"
+  ]
+}
