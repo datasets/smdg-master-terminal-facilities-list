@@ -48,8 +48,7 @@
           {
             "name": "Valid Before",
             "description": "Entry is valid till this date",
-            "type": "date",
-            "format": "default"
+            "type": "date"
           },
           {
             "name": "Date Insert",
