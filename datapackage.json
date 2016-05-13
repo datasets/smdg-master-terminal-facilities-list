@@ -18,7 +18,7 @@
       "schema": {
         "fields": [
           {
-            "name": "UN/LOCODE",
+            "name": "UNLOCODE",
             "description": "Main location UN/LOCODE. In an UN/EDIFACT message, use in a LOC segment, element C517.3225",
             "type": "string"
           },

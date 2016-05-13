@@ -4,3 +4,5 @@ Example segment where the main location is RULED (UN/LOCODE for Saint Petersburg
 ```
 LOC+11+RULED:139:6+PLP:72:306
 ```
+
+See also http://data.okfn.org/data/core/un-locode
