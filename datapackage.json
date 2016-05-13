@@ -18,75 +18,63 @@
       "schema": {
         "fields": [
           {
-            "name": "UNLOCODE",
+            "name": "UN/LOCODE",
             "description": "Main location UN/LOCODE. In an UN/EDIFACT message, use in a LOC segment, element C517.3225",
-            "type": "string",
-            "format": "default"
+            "type": "string"
           },
           {
-            "name": "CompanyName",
-            "type": "string",
-            "format": "default"
+            "name": "Company Name",
+            "type": "string"
           },
           {
-            "name": "TerminalFacility",
-            "type": "string",
-            "format": "default"
+            "name": "Terminal Facility",
+            "type": "string"
           },
           {
-            "name": "TerminalCode",
+            "name": "Terminal Code",
             "description": "In an UN/EDIFACT message, use in a LOC segment, element C519.3223",
-            "type": "string",
-            "format": "default"
+            "type": "string"
           },
           {
-            "name": "LastChange",
+            "name": "Last Change",
             "description": "Last change of this entry",
-            "type": "date",
-            "format": "default"
+            "type": "date"
           },
           {
-            "name": "ValidFrom",
+            "name": "Valid From",
             "description": "Entry is valid from this date",
-            "type": "date",
-            "format": "default"
+            "type": "date"
           },
           {
-            "name": "ValidBefore",
+            "name": "Valid Before",
             "description": "Entry is valid till this date",
             "type": "date",
             "format": "default"
           },
           {
-            "name": "DateInsert",
+            "name": "Date Insert",
             "description": "Entry was added on this date",
-            "type": "date",
-            "format": "default"
+            "type": "date"
           },
           {
-            "name": "ApplicantName",
-            "type": "string",
-            "format": "default"
+            "name": "Applicant Name",
+            "type": "string"
           },
           {
-            "name": "ApplicantEmail",
-            "type": "string",
-            "format": "default"
+            "name": "Applicant Email",
+            "type": "string"
           },
           {
             "name": "Latitude",
-            "type": "number",
-            "format": "default"
+            "type": "number"
           },
           {
             "name": "Longitude",
-            "type": "number",
-            "format": "default"
+            "type": "number"
           },
           {
-            "name": "TerminalContactOrWebsite",
-            "type": "string",
-            "format": "default"
+            "name": "Terminal Contact Or Website",
+            "type": "string"
           }
         ]
       }
