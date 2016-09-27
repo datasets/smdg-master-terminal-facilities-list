@@ -3,7 +3,7 @@
   "title": "SMDG Master Terminal Facilities List",
   "description": "Code list for terminal facilities built as an extension to UN/LOCODE",
   "homepage": "http://smdg.org/index.php/smdg-code-lists/",
-  "version": "201608.1",
+  "version": "201609.1",
   "license": "CC-BY-4.0",
   "sources": [{
   "name": "SMDG",
@@ -23,7 +23,12 @@
             "type": "string"
           },
           {
-            "name": "Company Name",
+            "name": "Alternative UNLOCODE",
+            "type": "string"
+          },
+          {
+            "name": "Terminal Code",
+            "description": "In an UN/EDIFACT message, use in a LOC segment, element C519.3223",
             "type": "string"
           },
           {
@@ -31,8 +36,7 @@
             "type": "string"
           },
           {
-            "name": "Terminal Code",
-            "description": "In an UN/EDIFACT message, use in a LOC segment, element C519.3223",
+            "name": "Company Name",
             "type": "string"
           },
           {
@@ -48,11 +52,6 @@
           {
             "name": "Valid Before",
             "description": "Entry is valid till this date",
-            "type": "date"
-          },
-          {
-            "name": "Date Insert",
-            "description": "Entry was added on this date",
             "type": "date"
           },
           {
