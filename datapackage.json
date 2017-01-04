@@ -3,7 +3,7 @@
   "title": "SMDG Master Terminal Facilities List",
   "description": "Code list for terminal facilities built as an extension to UN/LOCODE",
   "homepage": "http://smdg.org/index.php/smdg-code-lists/",
-  "version": "201609.1",
+  "version": "201612.1",
   "license": "CC-BY-4.0",
   "sources": [{
   "name": "SMDG",
