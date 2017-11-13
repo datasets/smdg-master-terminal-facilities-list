@@ -5,13 +5,17 @@
   "homepage": "http://smdg.org/index.php/smdg-code-lists/",
   "version": "201708.1",
   "license": "CC-BY-4.0",
-  "sources": [{
-  "name": "SMDG",
-  "web": "http://smdg.org/"
-  }],
+  "sources": [
+    {
+      "name": "SMDG",
+      "path": "http://smdg.org/",
+      "title": "SMDG"
+    }
+  ],
   "resources": [
     {
       "path": "data/smdg-master-terminal-facilities-list.csv",
+      "name": "smdg-master-terminal-facilities-list",
       "format": "CSV",
       "mediatype": "text/csv",
       "encoding": "UTF-8",
