@@ -88,5 +88,6 @@
     "container",
     "container terminal",
     "un-locode"
-  ]
+  ],
+  "collection": "reference-data"
 }
