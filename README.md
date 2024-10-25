@@ -1,4 +1,4 @@
-<a href="https://datahub.io/core/smdg-master-terminal-facilities-list"><img src="https://badgen.net/badge/icon/View%20on%20datahub.io/orange?icon=https://datahub.io/datahub-cube-badge-icon.svg&label&scale=1.25)" alt="badge" /></a>
+<a className="gh-badge" href="https://datahub.io/core/smdg-master-terminal-facilities-list"><img src="https://badgen.net/badge/icon/View%20on%20datahub.io/orange?icon=https://datahub.io/datahub-cube-badge-icon.svg&label&scale=1.25" alt="badge" /></a>
 
 List mantained by the [SMDG Secretariat](http://smdg.org/) to specify the port terminal facilities in UN/EDIFACT messages. The list is directly linked with the UN/LOCODE codelist (see [data package](http://data.okfn.org/data/core/un-locode))
 
