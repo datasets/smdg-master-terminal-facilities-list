@@ -13,7 +13,7 @@ LOC+11+RULED:139:6+PLP:72:306
 Process is recorded and automated in python script:
 ```bash
 # Install requirements
-pip install -r scripts/requirementst.txt
+pip install -r scripts/requirements.txt
 
 # Run the script
 python scripts/process.py
