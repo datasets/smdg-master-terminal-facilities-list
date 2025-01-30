@@ -35,6 +35,23 @@ def retrieve_content(link):
     with open(file_name + '.xlsx', 'wb') as f:
         f.write(response.content)
 
+def dms_to_decimal(degrees, minutes, seconds, direction):
+    decimal = degrees + minutes / 60 + seconds / 3600
+    if direction in ['S', 'W']:
+        decimal = -decimal
+    return decimal
+
+def convert_dms(dms):
+    parts = dms.split(' ')
+    direction = parts[0]
+    dms_values = parts[1].replace('°', ' ').replace('\'', ' ').replace('\"', '').split()
+
+    degrees = int(dms_values[0])
+    minutes = int(dms_values[1])
+    seconds = float(dms_values[2])
+    
+    return dms_to_decimal(degrees, minutes, seconds, direction)
+
 def transform_csv():
     df = pd.read_excel(file_name + '.xlsx', engine='openpyxl')
     # Skip 6 rows and change the headers
@@ -46,7 +63,10 @@ def transform_csv():
     df['Last Change'] = pd.to_datetime(df['Last Change']).dt.date
     df['Valid From'] = pd.to_datetime(df['Valid From']).dt.date
     df['Valid Until'] = pd.to_datetime(df['Valid Until']).dt.date
-
+    df['Longitude(Decimal)'] = round(df['Longitude(DMS)'].apply(convert_dms), 5)
+    df['Latitude(Decimal)'] = round(df['Latitude(DMS)'].apply(convert_dms), 5)
+    df.drop(['Latitude(DMS)', 'Longitude(DMS)'], axis=1, inplace=True)
+    df['Coordinates'] = df['Latitude(Decimal)'].astype(str) + ', ' + df['Longitude(Decimal)'].astype(str)
     df.to_csv('data/' + file_name + '.csv', index=False)
 
 def clean_up():
