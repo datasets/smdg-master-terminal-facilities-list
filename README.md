@@ -9,6 +9,19 @@ Example segment where the main location is RULED (UN/LOCODE for Saint Petersburg
 LOC+11+RULED:139:6+PLP:72:306
 ```
 
+## Preparation
+Process is recorded and automated in python script:
+```bash
+# Install requirements
+pip install -r scripts/requirementst.txt
+
+# Run the script
+python scripts/process.py
+```
+
+## Automation
+Up-to-date (auto-updates every 3 months) smdg dataset could be found on the datahub.io: https://datahub.io/core/smdg-master-terminal-facilities-list
+
 ## License
 
 All data is licensed under the [Creative Commons 4.0 Attribution License](https://creativecommons.org/licenses/by/4.0/). You may need to attribute the specific code to the SMDG Secretariat.

@@ -42,12 +42,20 @@
             "type": "string"
           },
           {
-            "name": "Terminal Facility",
+            "name": "Terminal Facility Name",
             "type": "string"
           },
           {
-            "name": "Company Name",
+            "name": "Terminal Company Name",
             "type": "string"
+          },
+          {
+            "name": "Latitude(DMS)",
+            "type": "geopoint"
+          },
+          {
+            "name": "Longitude(DMS)",
+            "type": "geopoint"
           },
           {
             "name": "Last Change",
@@ -60,24 +68,20 @@
             "type": "date"
           },
           {
-            "name": "Valid Before",
+            "name": "Valid Until",
             "description": "Entry is valid till this date",
             "type": "date"
           },
           {
-            "name": "Applicant Name",
+            "name": "Terminal Website",
             "type": "string"
           },
           {
-            "name": "Applicant Email",
+            "name": "Terminal Address",
             "type": "string"
           },
           {
-            "name": "Coordinates",
-            "type": "geopoint"
-          },
-          {
-            "name": "Terminal Contact Or Website",
+            "name": "Remarks",
             "type": "string"
           }
         ]
