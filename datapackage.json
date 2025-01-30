@@ -50,14 +50,6 @@
             "type": "string"
           },
           {
-            "name": "Latitude(DMS)",
-            "type": "geopoint"
-          },
-          {
-            "name": "Longitude(DMS)",
-            "type": "geopoint"
-          },
-          {
             "name": "Last Change",
             "description": "Last change of this entry",
             "type": "date"
@@ -82,6 +74,10 @@
           },
           {
             "name": "Remarks",
+            "type": "string"
+          },
+          {
+            "name": "Coordinates",
             "type": "string"
           }
         ]
