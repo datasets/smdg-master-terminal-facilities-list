@@ -65,8 +65,8 @@ def transform_csv():
     df['Valid Until'] = pd.to_datetime(df['Valid Until']).dt.date
     df['Longitude(Decimal)'] = round(df['Longitude(DMS)'].apply(convert_dms), 5)
     df['Latitude(Decimal)'] = round(df['Latitude(DMS)'].apply(convert_dms), 5)
-    df.drop(['Latitude(DMS)', 'Longitude(DMS)'], axis=1, inplace=True)
     df['Coordinates'] = df['Latitude(Decimal)'].astype(str) + ', ' + df['Longitude(Decimal)'].astype(str)
+    df.drop(['Latitude(DMS)', 'Longitude(DMS)', 'Longitude(Decimal)', 'Latitude(Decimal)'], axis=1, inplace=True)
     df.to_csv('data/' + file_name + '.csv', index=False)
 
 def clean_up():
