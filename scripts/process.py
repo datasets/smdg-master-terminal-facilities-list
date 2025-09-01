@@ -1,6 +1,8 @@
 import os
 import requests
 import pandas as pd
+import re
+import json
 
 from bs4 import BeautifulSoup
 
@@ -27,6 +29,20 @@ def get_link():
     soup = BeautifulSoup(response.text, 'html.parser')
     link = soup.find_all('a', {'class': 'mtli_attachment'})
     link = link[0].get('href')
+    # Extract the date using regex
+    date_match = re.search(r'v(\d{8})\.xlsx', link)
+    if date_match:
+        new_version = date_match.group(1)
+        dpfile = 'datapackage.json'
+        with open(dpfile, 'r', encoding='utf-8') as f:
+            datapackage = json.load(f)
+
+        old_version = datapackage.get('version', 'unknown')
+        datapackage['version'] = new_version
+
+        with open(dpfile, 'w', encoding='utf-8') as f:
+            json.dump(datapackage, f, indent=2, ensure_ascii=False)
+
     return link
 
 def retrieve_content(link):
@@ -49,7 +65,7 @@ def convert_dms(dms):
     degrees = int(dms_values[0])
     minutes = int(dms_values[1])
     seconds = float(dms_values[2])
-    
+
     return dms_to_decimal(degrees, minutes, seconds, direction)
 
 def transform_csv():
