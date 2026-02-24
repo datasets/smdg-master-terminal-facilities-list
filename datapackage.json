@@ -1,9 +1,9 @@
 {
   "name": "smdg-master-terminal-facilities-list",
   "title": "SMDG Master Terminal Facilities List",
-  "description": "Code list for terminal facilities built as an extension to UN/LOCODE",
+  "description": "Code list for terminal facilities built as an extension to UN/LOCODE, sourced from https://github.com/smdg-org/Terminal-Code-List",
   "homepage": "http://smdg.org/index.php/smdg-code-lists/",
-  "version": "20250716",
+  "version": "20260211",
   "licenses": [
     {
       "name": "ODC-PDDL-1.0",
@@ -14,8 +14,8 @@
   "sources": [
     {
       "name": "SMDG",
-      "path": "http://smdg.org/",
-      "title": "SMDG"
+      "path": "https://github.com/smdg-org/Terminal-Code-List",
+      "title": "SMDG Terminal Code List (GitHub)"
     }
   ],
   "resources": [
@@ -87,7 +87,8 @@
   "keywords": [
     "container",
     "container terminal",
-    "un-locode"
+    "un-locode",
+    "smdg"
   ],
   "collection": "reference-data"
 }
