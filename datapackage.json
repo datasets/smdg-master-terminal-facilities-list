@@ -90,5 +90,9 @@
     "un-locode",
     "smdg"
   ],
-  "collection": "reference-data"
+  "collection": "reference-data",
+  "has_solutions": [
+    "global-country-region-reference-data",
+    "logistics"
+  ]
 }
